@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1400px;
+  border: 1px solid black;
+  gap: 60px;
+  padding: 50px 0 50px 0;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 551px;
+  height: fit-content;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.box2 {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.text-1 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.text-2 {
+  font-size: 20px;
+  margin-left: 10px;
+}

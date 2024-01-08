@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  width: 1440px;
+  background-color: #f4f4f4;
+}
+.box-1 {
+  display: inline;
+}
+.garchig-1 {
+  color: #303030;
+  font-size: 80px;
+  font-weight: 800;
+  display: flex;
+  text-align: center;
+  width: 401px;
+  height: 196px;
+  margin-top: 138px;
+  margin-left: 519px;
+  margin-right: 520px;
+}
+.photo-1 {
+  display: flex;
+  justify-content: center;
+  gap: 66px;
+}
+.box-2 {
+  margin-top: 200px;
+}
+.b-garchig {
+  margin-left: 110px;
+  display: inline-block;
+}
+h2 {
+  color: #1ac74a;
+  font-size: 32px;
+  font-weight: 400;
+  width: 122px;
+  height: 32px;
+}
+.garhcig-2 {
+  color: #303030;
+  font-size: 48px;
+  font-weight: 700;
+  width: 358px;
+  height: 118px;
+}
+.hure {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.medku {
+  display: flex;
+  flex-direction: row;
+}
+.b-hure {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.hure-2 {
+  width: 400px;
+  height: 85px;
+  color: #303030;
+  border-style: solid;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.photo-2 {
+  cursor: pointer;
+}
+.b-hure :hover {
+  background-color: #303030;
+  color: #fff;
+  cursor: pointer;
+}
+.mur-2 {
+  color: #777;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.box-3 {
+  margin-top: 200px;
+}
+.garchig-4 {
+  font-size: 48px;
+}
+.b-garchig-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.gants {
+  color: #777;
+  font-size: 20px;
+  font-weight: 700;
+}
+li {
+  color: #777;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 500;
+}
+ul {
+  margin-top: 40px;
+}
+.j-box-2 {
+  width: 308px;
+  height: 373px;
+  background-color: #fff;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 100px;
+}
+.j-box-2 :hover {
+  transform: scale();
+}
+.j-box {
+  display: flex;
+  flex-direction: column;
+}
+.j-box-3 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.mungu-1 {
+  margin-top: 80px;
+  display: flex;
+}
+.mungu-2 {
+  margin-top: 40px;
+}
+.box-4 {
+  margin-top: 300px;
+}
+.b-box {
+  height: 183px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.h-garchig {
+  color: white;
+  font-size: 32px;
+}
+.ordernow {
+  background-color: #18ba51;
+  width: 130px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h-button {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.box-5 {
+  background-color: black;
+  height: 228px;
+}
+.sb-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pine {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+.fb-ig {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.fb-hure {
+  width: 167px;
+  height: 44px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ig-hure {
+  width: 167px;
+  height: 44px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+.insta {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+.photo-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hure .photo-2 :hover + .photo-3 img:nth-child(1) {
+  display: block;
+}
+.photo-3 {
+  display: none;
+}
+@media only screen and (max-width: 430px) {
+  .photo-2 {
+    display: none;
+  }
+  .j-box-3 {
+    display: block;
+  }
+}

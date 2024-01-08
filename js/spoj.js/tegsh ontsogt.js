@@ -1,0 +1,10 @@
+let a = window.prompt("ehnii too");
+let b = window.prompt("2-dahi too");
+let hariu;
+let hari;
+a = Number(a);
+b = Number(b);
+hariu = a * b;
+hari = (a + b) * 2;
+window.alert(hariu);
+window.alert(hari);

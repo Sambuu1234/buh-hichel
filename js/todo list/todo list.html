@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo list.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="modalcontainer">
+        <div class="modal">
+          <h1 class="h1">Add Task</h1>
+          <p>Title</p>
+          <input class="input1" id="title-input" type="text" />
+          <p>Description</p>
+          <input class="input3" id="description-input" type="text" />
+          <p>Status</p>
+          <select class="input2" id="status-input">
+            <option value="To do">To do</option>
+            <option value="In progress">In progress</option>
+            <option value="Stuck">Stuck</option>
+            <option value="Done">Done</option>
+          </select>
+          <p>Priority</p>
+          <select class="input2" id="priority-input">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <button class="button1" onclick="addTodo()">Add Task</button>
+        </div>
+      </div>
+      <div class="container">
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="box1">
+            <h1>To do</h1>
+            <span>0</span>
+          </div>
+          <div
+            id="container-1"
+            class="plus"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-1"
+          >
+            <div class="check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="between-box">
+              <h3 class="h3">hihi</h3>
+              <h4 class="h4">hahha</h4>
+              <div class="low">high</div>
+            </div>
+            <div class="check-b">
+              <div class="check2">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="check2">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
+            </div>
+          </div> -->
+          <div id="add-todo-button" class="box3" onclick="show()">
+            <div><i class="fa-solid fa-plus"></i></div>
+            <div>Add card</div>
+          </div>
+        </div>
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="box1">
+            <h1>In progress</h1>
+            <span>0</span>
+          </div>
+          <div id="container-2" class="plus"></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-2"
+          >
+            <button class="check">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <div class="between-box">
+              <h3 class="h3"></h3>
+              <h4 class="h4"></h4>
+              <button class="low"></button>
+            </div>
+            <div class="check-b">
+              <button class="check2">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="check2">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </div>
+          </div> -->
+          <div id="add-todo-button" class="box3" onclick="show()">
+            <div><i class="fa-solid fa-plus"></i></div>
+            <div>Add card</div>
+          </div>
+        </div>
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="box1">
+            <h1>Stuck</h1>
+            <span>0</span>
+          </div>
+          <div id="container-3" class="plus"></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-3"
+          >
+            <button class="check">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <div class="between-box">
+              <h3 class="h3"></h3>
+              <h4 class="h4"></h4>
+              <button class="low"></button>
+            </div>
+            <div class="check-b">
+              <button class="check2">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="check2">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </div>
+          </div> -->
+          <div id="add-todo-button" class="box3" onclick="show()">
+            <div><i class="fa-solid fa-plus"></i></div>
+            <div>Add card</div>
+          </div>
+        </div>
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <div class="box1">
+            <h1>Done</h1>
+            <span>0</span>
+          </div>
+          <div id="container-4" class="plus"></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-4"
+          >
+            <button class="check">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <div class="between-box">
+              <h3 class="h3">3fsdgvf</h3>
+              <h4 class="h4">3sfdgdfgvf</h4>
+              <button class="low">low</button>
+            </div>
+            <div class="check-b">
+              <button class="check2">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="check2">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </div>
+          </div> -->
+          <div id="add-todo-button" class="box3" onclick="show()">
+            <div><i class="fa-solid fa-plus"></i></div>
+            <div>Add card</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./todo list.js"></script>
+  </body>
+</html>

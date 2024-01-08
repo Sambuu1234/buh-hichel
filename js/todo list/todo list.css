@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+}
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(hodo.png);
+  background-size: cover;
+}
+.modalcontainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+.modal {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 30px;
+}
+.h1 {
+  font-size: 30px;
+  padding: 10px 0 10px 0;
+}
+.input1 {
+  width: 90%;
+  margin-bottom: 15px;
+  height: 30px;
+}
+.input2 {
+  width: 92%;
+  margin-bottom: 15px;
+  height: 35px;
+}
+.input3 {
+  width: 90%;
+  padding-bottom: 70px;
+}
+.button1 {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  width: 92%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.show {
+  display: flex;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  padding: 120px 0;
+  gap: 16px;
+}
+.board {
+  width: 23%;
+  height: fit-content;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ebecf0;
+}
+.box1 {
+  width: 400%;
+  display: flex;
+  font-weight: 600;
+  padding: 8px;
+  gap: 10px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+h1 {
+  font-size: 20px;
+}
+span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.box2 {
+  width: 91%;
+  background-color: white;
+  padding: 8px;
+  margin-left: 6px;
+  display: flex;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  gap: 12px;
+}
+.check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.between-box {
+  width: 79%;
+  gap: 14px;
+
+  flex-direction: column;
+}
+.check2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-b {
+  display: flex;
+  flex-direction: column;
+}
+
+.low {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: 1px solid gray;
+}
+
+.h3 {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.h4 {
+  margin-bottom: 10px;
+}
+
+.box3 {
+  width: 95%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.box3:hover {
+  background-color: rgb(195, 191, 191);
+  border-radius: 8px;
+}
+div {
+  font-weight: 800;
+}
+.plus {
+  margin-top: 20px;
+  height: fit-content;
+}
