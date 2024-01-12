@@ -1,0 +1,24 @@
+.body {
+  display: flex;
+  justify-content: center;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 1400px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.container {
+  width: 390px;
+  height: 551px;
+  border: 1px solid gray;
+  border-radius: 18px;
+}
+.img {
+  width: 390px;
+  height: 331px;
+}
+.first {
+  padding-left: 10px;
+}
