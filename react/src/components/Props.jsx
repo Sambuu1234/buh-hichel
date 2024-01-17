@@ -1,9 +1,12 @@
 export const List = (props) => {
+  const { Array } = props;
   return (
-    <div>
-      <div>
-        name:{props.ehniiner} score:{props.score}
-      </div>
-    </div>
+    <>
+      {Array.map((element) => (
+        <div>
+          img:{element.imgUrl}, name:{element.title}
+        </div>
+      ))}
+    </>
   );
 };

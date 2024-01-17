@@ -4,21 +4,19 @@ export default function Home() {
     {
       imgUrl:
         "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg",
-      title: "hihi",
+      title: "Bi nere medehgui",
     },
     {
       imgUrl:
         "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg",
-      title: "haha",
+      title: "Bi nere meddegch baij magadgu",
     },
   ];
   return (
-    <div>
+    <>
       <div>
-        {arr.map((element) => (
-          <List name={element.name} score={element.score}></List>
-        ))}
+        <List Array={arr}></List>
       </div>
-    </div>
+    </>
   );
 }

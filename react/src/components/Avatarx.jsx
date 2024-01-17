@@ -8,7 +8,6 @@ export const List = (props) => {
           <img src={element.avatar} alt="" />
           <h1 className={styles.first}>
             {element.first_name}
-            {""}
             {element.last_name}
           </h1>
           <p className={styles.first}>{element.employment.title}</p>
