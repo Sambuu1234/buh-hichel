@@ -11,10 +11,16 @@ export default function Home() {
   const [filteredArray, setFilteredArray] = useState(articles);
   const [filteredTrend, setFilteredTrend] = useState(articles);
   const [filteredPro, setFilteredPro] = useState(articles);
+  const [number, setNumber] = useState(9);
+  const Loadmore = () => {
+    setNumber(number + 3);
+  };
 
   const fetchData = async () => {
     try {
-      const arrayRes = await fetch(" https://dev.to/api/articles?per_page=9");
+      const arrayRes = await fetch(
+        `https://dev.to/api/articles?per_page=${number}`
+      );
       const trendRes = await fetch(" https://dev.to/api/articles?per_page=4");
       const proRes = await fetch(" https://dev.to/api/articles?per_page=5]");
       const arrayData = await arrayRes.json();
@@ -31,7 +37,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [number]);
 
   const handleSearch = (event) => {
     const filteredArticles = articles.filter((article) =>
@@ -45,7 +51,7 @@ export default function Home() {
       <Header handleSearch={handleSearch}></Header>
       <Profile pro={filteredPro}></Profile>
       <Trending trend={filteredTrend}></Trending>
-      <BlogPost blog={filteredArray}></BlogPost>
+      <BlogPost blog={filteredArray} Load={Loadmore}></BlogPost>
       <Footer></Footer>
     </div>
   );

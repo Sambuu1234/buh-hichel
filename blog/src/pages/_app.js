@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { FirstContextProvider } from "./context";
+import { FirstContextProvider } from "../components/context";
 export default function App({ Component, pageProps }) {
   return (
     <FirstContextProvider>

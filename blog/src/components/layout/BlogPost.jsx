@@ -1,6 +1,6 @@
 import Link from "next/link";
-export const BlogPost = ({ blog }) => {
-  // console.log(blog);
+export const BlogPost = ({ blog, Load }) => {
+  console.log(Load);
   return (
     <div className="flex justify-center ">
       <div className="container">
@@ -10,7 +10,7 @@ export const BlogPost = ({ blog }) => {
               All Blog Post
             </h1>
             <div className="flex justify-between pb-8">
-              <div className=" flex gap-5 *:text-xs *:font-bold *:text-[#495057] ">
+              <div className=" flex gap-5 *:text-xs *:font-bold *:text-[#495057] *:cursor-pointer">
                 <p>All</p>
                 <p>Design</p>
                 <p>Travel</p>
@@ -18,7 +18,9 @@ export const BlogPost = ({ blog }) => {
                 <p>Technology</p>
                 <p>Branding</p>
               </div>
-              <p className="text-xs font-bold text-[#495057]">View All</p>
+              <Link href="/blog">
+                <p className="text-xs font-bold text-[#495057]">View All</p>
+              </Link>
             </div>
           </div>
           <div className="flex justify-between gap-4 flex-wrap">
@@ -55,7 +57,10 @@ export const BlogPost = ({ blog }) => {
             })}
           </div>
           <div className="container flex justify-center py-[80px]">
-            <div className="  border-[1px] border-gray-300 inline-block py-3 px-5 rounded-md">
+            <div
+              onClick={Load}
+              className="  border-[1px] border-gray-300 inline-block py-3 px-5 rounded-md cursor-pointer hover:bg-gray-300"
+            >
               <h1 className=" text-base font-semibold text-[#696A75]">
                 Load more
               </h1>

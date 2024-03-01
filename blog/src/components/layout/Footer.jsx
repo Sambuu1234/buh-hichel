@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const Footer = () => {
   return (
     <div className="flex justify-center bg-[#F6F6F7]">
@@ -19,9 +20,15 @@ export const Footer = () => {
               <h2 className="text-base font-normal">Phone : 880 123 456 789</h2>
             </div>
             <div className="*:textlg *:font-normal *:text-[#3B3C4A]">
-              <h1>Home</h1>
-              <h1>Blog</h1>
-              <h1>Contact</h1>
+              <Link href="/">
+                <p>Home</p>
+              </Link>
+              <Link href="/blog">
+                <p>Blog</p>
+              </Link>
+              <Link href="/contact">
+                <p>Contact</p>
+              </Link>
             </div>
             <div className="flex items-start gap-5">
               <img src="/fb.svg" alt="" />
